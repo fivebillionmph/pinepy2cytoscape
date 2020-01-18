@@ -1,18 +1,18 @@
-from . import BASE_URL, HEADERS
+from . import HEADERS
 import requests
 import json
 import pandas as pd
 
 
 class Style(object):
-    def __init__(self, name):
+    def __init__(self, name, url):
         # Validate required argument
         if name is None:
             raise ValueError("Style name is required.")
         else:
             self.__name = name
 
-        self.__url = BASE_URL + 'styles/' + str(name) + '/'
+        self.__url = url + '/' + str(name) + '/'
 
     def get_name(self):
         """

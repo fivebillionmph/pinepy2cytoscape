@@ -22,7 +22,7 @@ class StyleClient(object):
         existing_styles = requests.get(self.__url).json()
 
         if name in existing_styles:
-            return Style(name)
+            return Style(name, self.__url)
             
         if original_style is None:
             style = {
@@ -35,7 +35,7 @@ class StyleClient(object):
             style['title'] = name
             
         new_style_name = requests.post(self.__url, data=json.dumps(style), headers=HEADERS).json()['title']
-        return Style(name=new_style_name)
+        return Style(new_style_name, self.__url)
 
     def get_all(self):
         """
