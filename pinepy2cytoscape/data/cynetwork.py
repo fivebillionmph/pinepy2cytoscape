@@ -2,7 +2,7 @@ import json
 
 import pandas as pd
 import requests
-from py2cytoscape.data.network_view import CyNetworkView
+from .network_view import CyNetworkView
 
 from ..util import util_networkx as nx_util
 from ..util import util_dataframe as df_util

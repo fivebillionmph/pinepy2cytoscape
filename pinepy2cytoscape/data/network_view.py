@@ -4,12 +4,12 @@ import json
 import pandas as pd
 import numpy as np
 import requests
-from py2cytoscape.data.edge_view import EdgeView
-from py2cytoscape.data.node_view import NodeView
+from .edge_view import EdgeView
+from .node_view import NodeView
 
 from . import BASE_URL, HEADERS
-from py2cytoscape.data.util_network import NetworkUtil
-from py2cytoscape.data.util_http import check_response
+from .util_network import NetworkUtil
+from .util_http import check_response
 
 BASE_URL_NETWORK = BASE_URL + 'networks'
 

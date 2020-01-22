@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from py2cytoscape.data.base_view import BaseView
+from .base_view import BaseView
 
 import requests
 import json
