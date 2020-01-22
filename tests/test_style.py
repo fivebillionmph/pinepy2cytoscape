@@ -2,8 +2,8 @@
 
 import unittest
 
-from py2cytoscape.data.style import Style
-from py2cytoscape.data.cyrest_client import CyRestClient
+from pinepy2cytoscape.data.style import Style
+from pinepy2cytoscape.data.cyrest_client import CyRestClient
 
 import pandas as pd
 import json

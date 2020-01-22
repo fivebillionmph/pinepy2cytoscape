@@ -5,8 +5,8 @@ import unittest
 
 import networkx as nx
 
-import py2cytoscape.util.util_dataframe as df_util
-from py2cytoscape.data.cyrest_client import CyRestClient
+import pinepy2cytoscape.util.util_dataframe as df_util
+from pinepy2cytoscape.data.cyrest_client import CyRestClient
 
 
 def pp(dict_data):

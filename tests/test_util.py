@@ -5,7 +5,7 @@ import os
 import igraph as ig
 
 import networkx as nx
-from py2cytoscape import util
+from pinepy2cytoscape import util
 
 import scipy as sp
 import tempfile
@@ -273,7 +273,7 @@ class NetworkConversionTests(unittest.TestCase):
     def test_to_igraph(self):
         print('---------- Cytoscape.js to igraph object -----------\n')
 
-        from py2cytoscape.util.util_igraph import to_igraph
+        from pinepy2cytoscape.util.util_igraph import to_igraph
         f = open(self.cur_dir + '/data/galFiltered.json', 'r')
         network = json.load(f)
 
@@ -346,7 +346,7 @@ class NetworkDataframeTests(unittest.TestCase):
         pass
 
     def test_to_dateframe(self):
-        from py2cytoscape.util.util_dataframe import to_dataframe
+        from pinepy2cytoscape.util.util_dataframe import to_dataframe
         with open(self.cur_dir + '/data/galFiltered.json', 'r') as f:
             network = json.load(f)
         df = to_dataframe(network, edges_attr_cols=['SUID'])

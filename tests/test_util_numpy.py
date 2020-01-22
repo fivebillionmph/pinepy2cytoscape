@@ -1,4 +1,4 @@
-from py2cytoscape.util import util_numpy as util
+from pinepy2cytoscape.util import util_numpy as util
 
 import numpy as np
 

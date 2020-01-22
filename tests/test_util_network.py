@@ -1,5 +1,5 @@
-from py2cytoscape.data.cyrest_client import CyRestClient
-from py2cytoscape.data.util_network import NetworkUtil
+from pinepy2cytoscape.data.cyrest_client import CyRestClient
+from pinepy2cytoscape.data.util_network import NetworkUtil
 
 import unittest
 

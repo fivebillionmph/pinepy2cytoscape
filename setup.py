@@ -14,7 +14,7 @@ python setup.py install
 from setuptools import setup, find_packages
 
 setup(
-    name='py2cytoscape',
+    name='pinepy2cytoscape',
     version='0.7.1',
     description='Utilities to use Cytoscape and Cytoscape.js from Python',
     long_description='Collection of tools for using Cytoscape and '
